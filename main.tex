@@ -1,0 +1,194 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+\usepackage{tabularx}
+\usepackage{lipsum}
+
+\usepackage[backend=biber,style=authoryear,sorting=ydnt]{biblatex}
+\addbibresource{myBIB.bib}
+\renewcommand{\bibfont}{\footnotesize}
+
+\hyphenation{tek-nisk-na-tur-vi-ten-ska-pe-li-ge}
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{June 2019}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{Daniele}{Ronchetti}{PhD Researcher in Nonlinear X-Ray Optics}{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+
+\begin{center}
+    \roundpic{profilepic.jpg}
+\end{center}
+
+\bg{cvgreen}{white}{About me}\\[0.5em]
+{\footnotesize
+I am deeply committed to achieving my goals and demonstrate unwavering dedication to the tasks I undertake. With a natural inclination towards leadership, I excel in collaborative environments, fostering teamwork and earning the respect of my colleagues. I prioritize precision in my work ethic, consistently striving for excellence and maintaining meticulous attention to detail in all my endeavors.}
+%I am characterized by a resolute commitment to achieving goals, demonstrating an unwavering dedication to tasks once set. With a natural inclination towards leadership, I seamlessly integrate into team environments, fostering collaboration and earning appreciation from colleagues. Precision is intrinsic to my work ethic, as I consistently strive for excellence in all endeavors, ensuring meticulous attention to detail without compromise.
+\bigskip
+
+\bg{cvgreen}{white}{Personal Information} \\[0.5em]
+Daniele Ronchetti
+
+Nationality: Italian
+
+Born: 6 Sept. 1996 in Lecco, IT
+
+\icon{\faHome}{cvgreen}{} Schreinerweg 36, 22549 Hamburg, DE
+\bigskip
+
+\bg{cvgreen}{white}{Areas of Specialization} \\[0.5em]
+Non-linear X-Ray Science ~•~ XFELs ~•~ Radiation-Matter Interaction ~•~ Data Analysis
+\bigskip
+
+\bg{cvgreen}{white}{Figures} \\[0.5em]
+\icon{\faBarChart}{cvgreen}{} 70\% proposals' acceptance (7/10)
+
+\icon{\faFlash}{cvgreen}{} Participation in 23 experiments (1 as main proposer) at XFEL facilities worldwide
+
+\icon{\faGroup}{cvgreen}{} 7 talks at international conferences (1 invited)
+
+\bigskip
+
+%\bg{cvgreen}{white}{Interests}\\[0.5em]
+%Outside of academic pursuits, I am passionately engaged in sports, particularly basketball, which has been a consistent part of my life since childhood. Playing basketball serves as a mental refuge, allowing me to recharge and revitalize. Additionally, I find enjoyment and relaxation in the more leisurely pursuit of cooking.
+
+\vfill
+
+\bg{cvgreen}{white}{Contacts}\\[0.5em]
+
+\icon{\faEnvelopeO}{cvgreen}{} \href{mailto:daniele.ronchetti@desy.de}{Work e-mail}
+
+\icon{\faEnvelopeO}{cvgreen}{} \href{mailto:daniele.ronchetti@outlook.it}{Personal e-mail}
+
+\icon{\faLinkedin}{cvgreen}{} \href{https://www.linkedin.com/in/daniele-ronchetti/}{LinkedIn}
+
+\icon{\faPhone}{cvgreen}{} +39 339 8544355
+
+\icon{\faPhone}{cvgreen}{} +49 157 52474668
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Experience}
+
+\begin{tabularx}{\columnwidth}{r|X}
+    \cvevent{2024--2024}{Internship Trainee}{SACLA, Riken}{Sayo, JP \color{cvred}}{\begin{itemize}
+        \item Planning and performing \textbf{XFELs' experiments}.
+        \item Supporting external users.
+        \item \textbf{Development of Python codes} for data analysis of large datasets.
+    \end{itemize}}\\
+    \cvevent{2023--present}{Tour Guide}{DESY}{Hamburg, DE \color{cvred}}{\begin{itemize}
+        % \item Guiding visitors through all the facilities in the DESY campus.
+        \item \textbf{Divulgation for non-expert audience}.
+    \end{itemize}}\\
+    \cvevent{2021--present}{PhD Researcher}{FS-TUXS Group (Prof. Dr. Nina Rohringer)}{Hamburg, DE \color{cvred}}{\newline PhD project on controlling x-ray scattering properties via manipulation of transient electronic states. \begin{itemize}
+        \item \textbf{Simulating} x-ray scattering in out-of-equilibrium systems.
+        \item \textbf{Writing beamtime proposals} for large-scale facilities.
+        \item \textbf{Leading} the design, planning, execution, and data analysis of \textbf{experimental campaigns at XFELs}.
+        \item \textbf{Supervision} of 1 B.Sc. thesis project and 2 internship students.
+    \end{itemize}}\\
+    \cvevent{2023--2023}{Teaching Assistant}{Universitaet Hamburg}{Hamburg, DE \color{cvred}}{\newline \textbf{Leading exercise classes} for the course of Physics IV (Solid State Physics).}\\
+    \cvevent{2020--2021}{Undergraduate Thesis Researcher}{COSMOS Lab.}{Lecco, IT \color{cvred}}{\newline \textbf{Master degree thesis} on coherent Raman spectroscopy of molecular hydrogen assisted with \textbf{optical frequency combs} for enhanced accuracy.\begin{itemize}
+        \item Design, \textbf{realization and testing} of the spectrometer and \textbf{integration of an optical frequency comb}.
+    \end{itemize}}\\
+    %During the period I have designed, realized and tested the stimulated Raman scattering spectrometer. I have carried out measurements, analyzed data and simulated signal impurities due to beam instabilities. I have also assisted with B. Sc. degree thesis activities.
+\end{tabularx}
+\vspace{2em}
+
+\begin{minipage}[t]{0.3\textwidth}
+    \section*{Education}
+    \begin{tabularx}{\textwidth}{X p{0.6\textwidth} X}
+        \cvdegree{2024}{Physics}{Hamburg, DE}{\textit{Dr. Rer. Nat.}}{Universität Hamburg}{UHH_Logo.eps} \\
+        \cvdegree{2021}{Engineering Physics}{Milano, IT}{Master of Science}{Politecnico di Milano}{PoliMi_Logo.eps} \\
+        \cvdegree{2019}{Engineering Physics}{Trondheim, NO}{Erasmus}{Norges teknisknaturvitenskapelige universitet}{Logo_NTNU.eps} \\
+        \cvdegree{2018}{Engineering Physics}{Milano, IT}{Bachelor of Science}{Politecnico di Milano}{PoliMi_Logo.eps}
+    \end{tabularx}
+
+    \section*{Languages}
+    \begin{tabular}{l | ll}
+        \textbf{Italian} & C2 & {\phantom{x}\footnotesize mother tongue} \\
+        \textbf{English} & C2 & \pictofraction{\faCircle}{cvgreen}{3}{cvgreen}{2}{\tiny} \\
+        \textbf{Spanish} & B1 & \pictofraction{\faCircle}{cvgreen}{2}{black!30}{3}{\tiny} \\
+        \textbf{German} &  & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{4}{\tiny}
+    \end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+
+    \section*{Main Skills} %\bg{cvgreen}{white}{current}-\bg{cvpurple}{white}{past}
+    \begin{tabular}{r @{\hspace{0.2em}}l}
+         \bgs{black!70}{XFELs' science} &  \barrule{0.45}{0.5em}{cvgreen}\\
+         \bgs{black!70}{Python} &  \barrule{0.45}{0.5em}{cvgreen}\\
+         %\bgs{black!70}{\LaTeX} & \barrule{0.34}{0.5em}{cvgreen} \\
+         \bgs{black!70}{Laser optics} & \barrule{0.25}{0.5em}{cvgreen} \\
+         %\bgs{black!70}{MATLAB} & \barrule{0.23}{0.5em}{cvgreen} \\
+         %\bgs{black!70}{DaVinci Resolve} & \barrule{0.1}{0.5em}{cvgreen} \\
+    \end{tabular}
+
+    \section*{Awards} %\bg{cvgreen}{white}{current}-\bg{cvpurple}{white}{past}
+    {\small European XFEL 2025 Users' Meeting UOEC PhD Posters Prize - 21.01.2025}
+
+    
+    %\section*{Publications}
+    \nocite{*}
+    \printbibliography[title=Publications]
+\end{minipage}
+
+\vfill
+
+%\begin{center}
+%    \emph{"You play how you train"}
+%\end{center}
+
+\newpage
+\end{paracol}
+\end{document}
