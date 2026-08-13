@@ -9,5 +9,7 @@
     "latex-workshop.latex.clean.command": "latexmk -c",
     "latex-workshop.latex.clean.method": "command",
     "latex-workshop.latex.clean.subfolder.enabled": true,
+    "latex-workshop.latex.outDir": "%DIR%",
+    "latex-workshop.latex.auxDir": "%DIR%/.output",
     "todo-tree.regex.regex": "(%\\s*($TAGS))",
 }
