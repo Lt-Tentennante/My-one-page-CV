@@ -6,7 +6,7 @@
   </a>
 </p>
 
-This repository contains my one-page CV in LaTeX and the generated PDF.
+This repository contains my own take of a one-page CV based on the [hipster-cv](https://github.com/latex-ninja/hipster-cv/).
 
 ## Files
 - `main.tex` — source file
