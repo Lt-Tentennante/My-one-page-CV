@@ -17,11 +17,15 @@
 
 % \hyphenation{tek-nisk-na-tur-vi-ten-ska-pe-li-ge}
 %------------------------------------------------------------------ Variablen
+\setlength{\columnsep}{1.5cm}
 
 \newlength{\rightcolwidth}
 \newlength{\leftcolwidth}
-\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\leftcolwidth}{0.25\textwidth}
 \setlength{\rightcolwidth}{0.75\textwidth}
+
+\newlength{\headerwidth}
+\setlength{\headerwidth}{\dimexpr\rightcolwidth + 0.42\columnsep\relax}
 
 %------------------------------------------------------------------
 
@@ -32,7 +36,7 @@
 \thispagestyle{empty}
 %-------------------------------------------------------------
 
-\section*{Start}
+% \section*{}
 
 \simpleheader
 {headercolour}
@@ -52,10 +56,9 @@
 
 % this has to be here so the paracols starts..
 \subsection*{}
-\vspace{4em}
+\vspace{5em}
 
-\setlength{\columnsep}{1.5cm}
-\columnratio{0.23}[0.75]
+\columnratio{0.25}[0.75]
 \begin{paracol}{2}
 \hbadness5000
 \paracolbackgroundoptions

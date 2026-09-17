@@ -217,10 +217,10 @@
 \node[
   rectangle,
   fill=#1,
-  anchor=north,
-  minimum width=\paperwidth,
+  anchor=north east,
+  minimum width=\headerwidth,
   minimum height=3.5cm
-] (header) at (current page.north) {};
+] (header) at (current page.north east) {};
 
 \node[draw=none, align=center] at (header.center) {%
 {\Huge \color{#5} #2 \textbf{#3}}\\[0.35em]
