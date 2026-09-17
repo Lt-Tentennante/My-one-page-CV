@@ -177,9 +177,23 @@
   {\color{#3}\rule[\baselineskip]{#1\textwidth}{#2}}\vspace{0.5em}
 }
 
-\newcommand{\cvevent}[5]{{#1} & \textbf{#2}\newline\textsc{#3} $\cdot$ {#4 ~\faMapMarker}{\color{black!70}\footnotesize #5}\vspace{1.5em}}
-
-% \newcommand{\cvevent}[6]{{#1} & \textbf{#2}\newline\textsc{#3} $\cdot$ {#4 ~\faMapMarker}\newline{\color{black!70}\footnotesize #5}\vspace{1.5em}& \adjustbox{valign=t, max width=0.06\textwidth}{\includegraphics{#6}}}
+\newcommand{\cvevent}[5]{%
+    \noindent
+    \begin{tabularx}{\linewidth}{@{}X>{\raggedleft\arraybackslash}p{0.25\linewidth}@{}}
+        \begin{tabular}[t]{@{}l@{}}
+            \textbf{#2}\\[-0.2ex]
+            \textsc{#3}
+        \end{tabular}
+        &
+        \begin{tabular}[t]{@{}r@{}}
+            #1\\[-0.2ex]
+            #4
+        \end{tabular}
+    \end{tabularx}
+    \par\smallskip
+    #5
+    \par\vspace{1.5em}%
+}
 
 \newcommand{\cvdegree}[6]{{#1} & \textbf{#2}\newline#4\newline{\color{black!70}\scriptsize #5\newline\faMapMarker\:#3}\vspace{0.5em} & \adjustbox{valign=t, max width=0.1\textwidth}{\includegraphics{#6}}}
 
