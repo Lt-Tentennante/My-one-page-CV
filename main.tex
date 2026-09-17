@@ -1,5 +1,8 @@
-\makeatletter\def\input@path{{./simplehipstercv/}}\makeatother
-\documentclass[lighthipster]{simplehipstercv/simplehipstercv}
+\makeatletter
+\def\input@path{{./simplehipstercv/}}
+\makeatother
+
+\documentclass[lighthipster]{simplehipstercv}
 % available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
 \usepackage[utf8]{inputenc}
 \usepackage[default]{raleway}
@@ -88,11 +91,18 @@
     \bigskip
 
     \bg{cvgreen}{white}{Languages} \\[0.5em]
-    Italian C2 (native language)\\
-    English C2 (full professional proficiency)\\
-    Spanish A2 \\
-    German A1
+    \noindent\makebox[\columnwidth][r]{
+        \begin{tabular}{l r@{}}
+            Italian & C2 \\
+            English & C2 \\
+            Spanish & A2 \\
+            German  & A1
+        \end{tabular}
+    }
     \bigskip
+
+    \bg{cvgreen}{white}{Publications} \\[0.5em]
+    For a list of publication visit the page at \href{https://scholar.google.com/citations?user=GPGZ9PQAAAAJ&hl=en}{\textbf{Google Scholar}}.
 
     %\bg{cvgreen}{white}{Interests}\\[0.5em]
     %Outside of academic pursuits, I am passionately engaged in sports, particularly basketball, which has been a consistent part of my life since childhood. Playing basketball serves as a mental refuge, allowing me to recharge and revitalize. Additionally, I find enjoyment and relaxation in the more leisurely pursuit of cooking.
