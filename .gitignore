@@ -4,3 +4,5 @@
 # Common LaTeX clutter (if any stray files show up outside .output/)
 *.log
 *.synctex.gz
+
+.vscode/
