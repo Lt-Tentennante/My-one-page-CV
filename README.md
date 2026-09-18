@@ -8,6 +8,11 @@
 
 This repository contains my own take of a one-page CV based on the [hipster-cv](https://github.com/latex-ninja/hipster-cv/).
 
+## Usage
+To create your own one-page CV simply clone the repository and run the `main.tex` file with a LaTeX engine. The simplest way to get to this result is to use [**Overleaf**](https://overleaf.com).
+
+In overleaf create a new project and upload the `main.tex` file, and the two folders `images` and `simplehipstercv`. Personalize the `main.tex` and add your own logos and pictures needed. Compile it and the job is done.
+
 ## Files
 ```text
 ├── LICENSE.md 
@@ -21,12 +26,5 @@ This repository contains my own take of a one-page CV based on the [hipster-cv](
 └── simplehipstercv/  - class and style files
 ```
 
-## Build
-To compile the PDF:
 
-```bash
-pdflatex main.tex
-```
-
-
-pdftoppm -png -r 300 main.pdf main
+<!-- pdftoppm -png -r 300 main.pdf main -->
