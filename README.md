@@ -1,7 +1,8 @@
 # My One-Page CV
+[Open or download the CV PDF](main.pdf?raw=true) to use its clickable links.
 
 <p align="center">
-  <a href="main.pdf">
+  <a href="main.pdf?raw=true">
     <img src="main-1.png" alt="CV preview" width="800">
   </a>
 </p>
